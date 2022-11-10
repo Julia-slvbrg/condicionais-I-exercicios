@@ -36,10 +36,16 @@ if(
 //Mais outra forma de fazer
 
 const nacionalidadeArray = ["brasileira", "argentina", "uruguaia", "chilena", "colombiana"]
-const resposta = prompt('Escreva a sua nacionalidade').toLowerCase()
 
-if(nacionalidadeArray.includes(resposta)){
+
+function confereNacionalidade(nacionalidade){
+    const resposta = prompt('Escreva a sua nacionalidade').toLowerCase()
+    if(nacionalidadeArray.includes(resposta)){
     console.log(`Sua nacionalidade é ${resposta}`)    
 }else{
     console.log(`Nacionalidade não encontrada`)
 }
+}
+
+confereNacionalidade()
+confereNacionalidade()
